@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:rotationX="360">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotationX="360">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inicio_sesion"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="214dp"
+            android:layout_height="43dp"
+            android:backgroundTint="#673AB7"
+            android:backgroundTintMode="multiply"
+            android:text="Iniciar sesion"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#673AB7"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="380dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#716E6E"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="474dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="260dp"
+            tools:text="Iniciar sesión" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="44dp"
+            android:layout_height="23dp"
+            android:src="@drawable/password"
+            tools:layout_editor_absoluteX="255dp"
+            tools:layout_editor_absoluteY="484dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico"
+            android:textColor="#673AB7"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textColor="#673AB7"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <Button
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:text="¿Has olvidado tu contraseña?"
+            android:textColor="#AAA6A6"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="631dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Registrarse"
+            android:textColor="#673AB7"
+            android:textColorLink="#00FFFFFF"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="679dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="190dp"
+            android:layout_height="41dp"
+            android:src="@mipmap/nombre1"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
