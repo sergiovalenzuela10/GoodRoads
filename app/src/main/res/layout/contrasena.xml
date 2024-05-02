@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:rotationX="360">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotationX="360">
+
+        <ImageView
+            android:id="@+id/volver"
+            android:layout_width="57dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/flecha"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/correo_recuperar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="390dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico"
+            android:textColor="#7e2199"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="356dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="256dp"
+            android:layout_height="69dp"
+            android:src="@mipmap/titulo"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="300dp"
+            android:layout_height="26dp"
+            android:text="¿Te olvidaste de tu contraseña?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="179dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="319dp"
+            android:layout_height="77dp"
+            android:text="!No te preocupes¡ Escribe el correo  Registrado y recibe instrucciones   para recuperarla."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <Button
+            android:id="@+id/olvidar_contrasena"
+            android:layout_width="279dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#7E2199"
+            android:text="Enviar"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFEFE"
+            android:textColorLink="#FFFEFE"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="485dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

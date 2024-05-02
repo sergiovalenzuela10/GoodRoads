@@ -22,19 +22,19 @@
         android:id="@+id/button"
         android:layout_width="214dp"
         android:layout_height="43dp"
-        android:backgroundTint="#673AB7"
+        android:backgroundTint="#7e2199"
         android:backgroundTintMode="multiply"
         android:text="Continuar"
         android:textColor="#FFFFFF"
         android:textColorLink="#673AB7"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="680dp" />
+        tools:layout_editor_absoluteY="619dp" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -42,66 +42,27 @@
         android:text="Nombre"
         android:textColor="#00673AB7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="210dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Nombre"
-        android:textColor="#00673AB7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="470dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Nombre"
-        android:textColor="#00673AB7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="308dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Nombre"
-        android:textColor="#00673AB7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="556dp" />
+        tools:layout_editor_absoluteY="198dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correo"
-        android:textColor="#673AB7"
+        android:textColor="#7e2199"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintHorizontal_bias="0.255"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="451dp" />
+        tools:layout_editor_absoluteY="445dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña"
-        android:textColor="#673AB7"
+        android:textColor="#7e2199"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.278"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,46 +73,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Apellido"
-        android:textColor="#673AB7"
+        android:textColor="#7e2199"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="289dp" />
+        tools:layout_editor_absoluteY="258dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Numero de identificación"
-        android:textColor="#673AB7"
+        android:textColor="#7e2199"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.389"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="363dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Cedula"
-        android:textColor="#00673AB7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="382dp" />
+        tools:layout_editor_absoluteY="356dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
-        android:textColor="#673AB7"
+        android:textColor="#7e2199"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="191dp" />
+        tools:layout_editor_absoluteY="169dp" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -168,20 +116,11 @@
         android:text="Registrarse"
         android:textColor="#1B1A1A"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="80dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aceptar terminos y condiciones"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="624dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -191,5 +130,49 @@
         android:textSize="16sp"
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="743dp" />
+
+    <EditText
+        android:id="@+id/apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <EditText
+        android:id="@+id/documento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="556dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="184dp"
+        android:layout_height="23dp"
+        android:text="¿Tienes una cuenta? Iniciar sesión"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="674dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
