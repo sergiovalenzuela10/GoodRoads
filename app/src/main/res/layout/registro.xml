@@ -5,6 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="184dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/titulo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -100,14 +108,6 @@
         app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="169dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="190dp"
-        android:layout_height="41dp"
-        android:src="@mipmap/nombre1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/textView"
