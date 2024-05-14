@@ -10,8 +10,12 @@
         android:layout_width="57dp"
         android:layout_height="24dp"
         android:src="@mipmap/flecha"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
 
     <TextView
         android:id="@+id/textView15"
@@ -21,25 +25,30 @@
         android:textColor="#7E2199"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="86dp" />
+        tools:layout_editor_absoluteY="59dp" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="370dp"
-        android:layout_height="265dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="134dp" />
+        android:layout_width="377dp"
+        android:layout_height="159dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="136dp" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Punto de referencia"
         android:textColor="#35424A"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toStartOf="@+id/mapView2"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -47,8 +56,8 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="462dp" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="352dp" />
 
     <TextView
         android:id="@+id/textView17"
@@ -58,8 +67,10 @@
         android:textColor="#35424A"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="535dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -67,31 +78,35 @@
         android:layout_height="113dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="573dp" />
+        app:layout_constraintBottom_toTopOf="@+id/camara"
+        tools:layout_editor_absoluteX="35dp" />
 
     <ImageView
         android:id="@+id/camara"
         android:layout_width="114dp"
         android:layout_height="75dp"
         android:src="@mipmap/camara"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="715dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="194dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#7E2199"
         android:text="Enviar reporte"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="818dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="305dp" />
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="303dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
