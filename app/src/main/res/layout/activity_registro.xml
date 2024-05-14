@@ -20,14 +20,15 @@
         android:id="@+id/registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF"
         android:text="Iniciar sesión"
         android:textColor="#673AB7"
         android:textColorLink="#00FFFFFF"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="731dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="636dp" />
 
     <EditText
         android:id="@+id/nombre"
@@ -38,9 +39,9 @@
         android:text="Nombre"
         android:textColor="#00673AB7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="194dp" />
+        tools:layout_editor_absoluteY="185dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -52,7 +53,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.255"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/documento" />
+        app:layout_constraintTop_toBottomOf="@+id/documento"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView3"
@@ -74,7 +76,7 @@
         android:text="Apellido"
         android:textColor="#7e2199"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
@@ -122,8 +124,10 @@
         android:layout_height="wrap_content"
         android:text="¿Tiene una cuenta?"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="743dp" />
+        app:layout_constraintEnd_toStartOf="@+id/registro"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="652dp" />
 
     <EditText
         android:id="@+id/apellidos"
@@ -134,7 +138,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="290dp" />
+        tools:layout_editor_absoluteY="257dp" />
 
     <EditText
         android:id="@+id/documento"
@@ -145,7 +149,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="386dp" />
+        tools:layout_editor_absoluteY="343dp" />
 
     <EditText
         android:id="@+id/correo"
@@ -156,7 +160,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteY="408dp" />
 
     <EditText
         android:id="@+id/contrasena"
@@ -165,15 +169,15 @@
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="568dp" />
+        tools:layout_editor_absoluteY="484dp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="184dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="108dp"
         android:text="¿Tienes una cuenta? Iniciar sesión"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="109dp" />
