@@ -1,12 +1,24 @@
 package com.example.prueba1
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.contrasena2)
+        setContentView(R.layout.inicio)
+
+        val olvido_contrasena = findViewById<Button>(R.id.olvidocontrasena);
+
+    olvido_contrasena.setOnClickListener{
+        val url_olvidation =Intent(this, contrasena::class.java);
+        startActivity(url_olvidation);
+
+}
+
+
     }
 }
 
