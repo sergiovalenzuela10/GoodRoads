@@ -43,6 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.prueba1.MenuPrincipal" />
     </application>
 
 </manifest>

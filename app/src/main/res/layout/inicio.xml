@@ -4,22 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/inicioSesion"
     android:orientation="vertical"
     android:rotationX="360">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/inicioSesion"
+        android:id="@+id/constraintLayoutInicioSesion"
         android:layout_width="409dp"
         android:layout_height="match_parent"
         android:rotationX="360"
         tools:layout_editor_absoluteX="1dp">
 
         <Button
-            android:id="@+id/inicioSesion"
+            android:id="@+id/inicioSesionButton"
             android:layout_width="214dp"
             android:layout_height="43dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="#7e2199"
             android:backgroundTintMode="multiply"
             android:text="Iniciar sesion"
@@ -109,7 +108,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/olvidocontrasena" />
+            app:layout_constraintTop_toBottomOf="@+id/olvidocontrasena"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -152,9 +152,12 @@
             android:textColor="#AEACAC"
             android:textColorHint="#FFFFFF"
             android:textColorLink="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inicioSesion" />
+            app:layout_constraintTop_toBottomOf="@+id/inicioSesionButton"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

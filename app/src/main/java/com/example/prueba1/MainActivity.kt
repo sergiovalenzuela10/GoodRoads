@@ -11,21 +11,24 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inicio)
 
-
+        val isesion = findViewById<Button>(R.id.inicioSesionButton)
         val olvidocontrasena = findViewById<Button>(R.id.olvidocontrasena)
         val regis = findViewById<Button>(R.id.registro)
 
-        olvidocontrasena.setOnClickListener{
+
+        isesion.setOnClickListener {
+            val url_inisesion = Intent(this, menu_principal::class.java)
+            startActivity(url_inisesion)
+        }
+
+        olvidocontrasena.setOnClickListener {
             val url_olvidocontrasena = Intent(this, contrasena::class.java)
             startActivity(url_olvidocontrasena)
         }
 
-        regis.setOnClickListener{
+        regis.setOnClickListener {
             val url_registro = Intent(this, registro::class.java)
             startActivity(url_registro)
-
-                    }
-
-                }
-
-            }
+        }
+    }
+}
