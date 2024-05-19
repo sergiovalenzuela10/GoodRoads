@@ -29,6 +29,7 @@ class MainActivity : ComponentActivity() {
         regis.setOnClickListener {
             val url_registro = Intent(this, registro::class.java)
             startActivity(url_registro)
+
         }
     }
 }
