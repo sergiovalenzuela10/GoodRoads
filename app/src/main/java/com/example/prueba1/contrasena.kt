@@ -1,16 +1,12 @@
 package com.example.prueba1
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.activity.ComponentActivity
 
-class contrasena : AppCompatActivity() {
+class contrasena : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_contrasena)
 
         }
     }
-}

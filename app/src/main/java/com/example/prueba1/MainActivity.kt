@@ -1,39 +1,31 @@
 package com.example.prueba1
 
 import android.content.Intent
+import androidx.activity.ComponentActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.ComponentActivity
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inicio)
 
-        val olvido_contrasena = findViewById<Button>(R.id.olvidocontrasena);
 
-    olvido_contrasena.setOnClickListener{
-        val url_olvidation =Intent(this, contrasena::class.java);
-        startActivity(url_olvidation);
+        val olvidocontrasena = findViewById<Button>(R.id.olvidocontrasena)
+        val regis = findViewById<Button>(R.id.registro)
 
-}
+        olvidocontrasena.setOnClickListener{
+            val url_olvidocontrasena = Intent(this, contrasena::class.java)
+            startActivity(url_olvidocontrasena)
+        }
 
+        regis.setOnClickListener{
+            val url_registro = Intent(this, registro::class.java)
+            startActivity(url_registro)
 
-    }
-}
+                    }
 
-//@Composable
-//fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    Text(
-//        text = "Hello $name!",
-//        modifier = modifier
-//    )
-//}
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    Prueba1Theme {
-//        Greeting("Android")
-//    }
-//}
+                }
+
+            }
