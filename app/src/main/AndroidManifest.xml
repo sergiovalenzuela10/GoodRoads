@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prueba1"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAkIySmfGbMueIScdI9nh4u6_jP_MM43_0"
+            />
+
         <activity
             android:name=".reporte_enviado"
             android:exported="false" />
@@ -43,7 +49,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.prueba1.MenuPrincipal" />
+        <activity android:name="com.example.prueba1.menu_principal" />
     </application>
 
 </manifest>
