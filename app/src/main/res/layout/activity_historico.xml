@@ -5,43 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/flecha"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="256dp"
         android:layout_height="69dp"
         android:src="@mipmap/titulo"
-        app:layout_constraintBottom_toTopOf="@+id/reporteHistorico"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="77dp" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/guardar"
         android:layout_width="122dp"
         android:layout_height="54dp"
+        android:layout_marginStart="28dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="28dp"
         android:backgroundTint="#7e2199"
         android:text="Guardar"
         android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.552"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/borrar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/borrar"
         android:layout_width="116dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="24dp"
         android:backgroundTint="#7e2199"
         android:text="Borrar"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
 
     <TableLayout
         android:id="@+id/reporteHistorico"
@@ -54,10 +77,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="143dp">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
 
         <TableRow
             android:layout_width="match_parent"

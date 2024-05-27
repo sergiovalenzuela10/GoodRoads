@@ -2,14 +2,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/inicioSesion"
+    android:id="@+id/menuPrincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:rotationX="360">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/inicioSesion"
+        android:id="@+id/menuPrincipall"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:rotationX="360">
@@ -47,15 +47,15 @@
             android:layout_width="257dp"
             android:layout_height="22dp"
             android:layout_marginTop="32dp"
-            android:text="_________________________________________________________________________________________"
+            android:text="_________________________________________"
             android:textColor="#35424A"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintHorizontal_bias="0.48"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.003" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView12"
@@ -70,19 +70,20 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.431" />
+            app:layout_constraintVertical_bias="0.399" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="240dp"
             android:text="Luminarias sin servicio o rotas"
             android:textColor="#35424A"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.617" />
 
         <TextView
             android:id="@+id/textView14"
@@ -96,71 +97,65 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.887" />
+            app:layout_constraintVertical_bias="0.845" />
 
         <Button
-            android:id="@+id/menu"
-            android:layout_width="75dp"
-            android:layout_height="35dp"
+            android:id="@+id/historico"
+            android:layout_width="274dp"
+            android:layout_height="28dp"
             android:background="#7E2199"
-            android:text="Menu"
+            android:text="Historial de casos"
             android:textColor="#FBFAFA"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.94"
-            app:layout_constraintStart_toEndOf="@+id/volver"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.022" />
-
-        <ImageView
-            android:id="@+id/volver"
-            android:layout_width="70dp"
-            android:layout_height="33dp"
-            android:src="@mipmap/flecha"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.022" />
+            app:layout_constraintVertical_bias="0.908" />
 
         <ImageButton
             android:id="@+id/danos"
             android:layout_width="133dp"
             android:layout_height="81dp"
             android:layout_marginTop="68dp"
+            android:background="@drawable/calle"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.083"
-            app:srcCompat="@mipmap/calle" />
+            app:layout_constraintVertical_bias="0.046"
+            app:srcCompat="@drawable/calle" />
 
         <ImageButton
             android:id="@+id/luz"
             android:layout_width="133dp"
-            android:layout_height="86dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/luminarias"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.567"
-            app:srcCompat="@mipmap/luminarias" />
+            app:layout_constraintVertical_bias="0.463"
+            app:srcCompat="@drawable/luminarias" />
 
         <ImageButton
             android:id="@+id/inseguros"
             android:layout_width="130dp"
             android:layout_height="86dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/alerta"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintVertical_bias="0.104"
-            app:srcCompat="@mipmap/alerta" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.737"
+            app:srcCompat="@drawable/alerta" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
