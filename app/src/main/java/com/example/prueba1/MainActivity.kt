@@ -7,40 +7,35 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inicio)
 
         val isesion = findViewById<Button>(R.id.inicioSesionButton)
-        val olvidocontrasena = findViewById<Button>(R.id.olvidocontrasena)
+        val olvidocontrase = findViewById<Button>(R.id.olvidoContrasena1)
         val regis = findViewById<Button>(R.id.registro)
         val users = Users.usuario
-        //val buttonInicio = findViewById<Button>(R.id.inicioSesionButton)
-        println(users)
 
         isesion.setOnClickListener {
-            val email = findViewById<EditText>(R.id.correo_recuperar).text.toString()
+            val email = findViewById<EditText>(R.id.correo_inicio).text.toString()
             val password = findViewById<EditText>(R.id.contrasena_inicio).text.toString()
 
-            if (email == "" || password == "") Toast.makeText(this, "Algun campo esta vacio", Toast.LENGTH_SHORT).show()
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Algun campo esta vacio", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
-            if(email == users["email"] && password == users["password"] ){
+            if (email == users["email"] && password == users["password"]) {
                 val intent = Intent(this, menu_principal::class.java)
                 startActivity(intent)
                 finish()
-            }else{
+            } else {
                 Toast.makeText(this, "El email o contraseña son incorrectas", Toast.LENGTH_SHORT).show()
             }
         }
 
-        //isesion.setOnClickListener {
-        //    val url_inisesion = Intent(this, menu_principal::class.java)
-        //    startActivity(url_inisesion)
-//      }
-
-        olvidocontrasena.setOnClickListener {
+        olvidocontrase.setOnClickListener {
             val url_olvidocontrasena = Intent(this, contrasena::class.java)
             startActivity(url_olvidocontrasena)
         }
@@ -48,7 +43,6 @@ class MainActivity : ComponentActivity() {
         regis.setOnClickListener {
             val url_registro = Intent(this, registro::class.java)
             startActivity(url_registro)
-
         }
     }
 }

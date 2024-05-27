@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "589389853472",
+    "project_id": "goodroads-b4d02",
+    "storage_bucket": "goodroads-b4d02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589389853472:android:e383da880006a7534e5d45",
+        "android_client_info": {
+          "package_name": "com.company.appprueba1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWLC8XYF-Usi8mK2RL4qCGAaIi3W1AAqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

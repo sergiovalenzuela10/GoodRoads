@@ -31,17 +31,19 @@
             app:layout_constraintTop_toBottomOf="@+id/contrasena_inicio" />
 
         <EditText
-            android:id="@+id/correo_recuperar"
+            android:id="@+id/correo_inicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.402"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/contrasena_inicio"
@@ -87,13 +89,13 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="28dp"
             android:text="Contraseña"
             android:textColor="#7e2199"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintHorizontal_bias="0.237"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/correo_recuperar" />
+            app:layout_constraintTop_toBottomOf="@+id/correo_inicio" />
 
         <Button
             android:id="@+id/registro"
@@ -108,7 +110,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/olvidocontrasena"
+            app:layout_constraintTop_toBottomOf="@+id/olvidoContrasena1"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
@@ -144,7 +146,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <Button
-            android:id="@+id/olvidocontrasena"
+            android:id="@+id/olvidoContrasena1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#00FFFFFF"
