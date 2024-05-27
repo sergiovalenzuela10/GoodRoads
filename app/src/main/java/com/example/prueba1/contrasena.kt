@@ -17,37 +17,37 @@ class contrasena : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contrasena)
 
-        auth = FirebaseAuth.getInstance()
+//        auth = FirebaseAuth.getInstance()
 
         val volver = findViewById<ImageButton>(R.id.imageButton)
-//        val emailText = findViewById<EditText>(R.id.correoRecuperar)
-//        val buttonCodigo = findViewById<Button>(R.id.enviarCodigo)
+        val emailText = findViewById<EditText>(R.id.correoRecuperar)
+        val buttonCodigo = findViewById<Button>(R.id.enviarCodigo)
 
         volver.setOnClickListener {
             val url_volver = Intent(this, MainActivity::class.java)
             startActivity(url_volver)
         }
 
-//        buttonCodigo.setOnClickListener {
-//            val email = emailText.text.toString().trim()
-//
-//            if (email.isEmpty()) {
-//                Toast.makeText(this, "Por favor, ingrese su correo electrónico", Toast.LENGTH_SHORT).show()
-//                return@setOnClickListener
-//            }
-//
-//            sendPasswordResetEmail(email)
-//        }
-//    }
-//
-//    private fun sendPasswordResetEmail(email: String) {
-//        auth.sendPasswordResetEmail(email)
-//            .addOnCompleteListener { task ->
-//                if (task.isSuccessful) {
-//                    Toast.makeText(this, "Se ha enviado un correo de restablecimiento", Toast.LENGTH_SHORT).show()
-//                } else {
-//                    Toast.makeText(this, "Error al enviar el correo de restablecimiento", Toast.LENGTH_SHORT).show()
-//                }
-//            }
+        buttonCodigo.setOnClickListener {
+            val email = emailText.text.toString().trim()
+
+            if (email.isEmpty()) {
+                Toast.makeText(this, "Por favor, ingrese su correo electrónico", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            sendPasswordResetEmail(email)
+        }
+    }
+
+    private fun sendPasswordResetEmail(email: String) {
+        auth.sendPasswordResetEmail(email)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(this, "Se ha enviado un correo de restablecimiento", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "Error al enviar el correo de restablecimiento", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 }
